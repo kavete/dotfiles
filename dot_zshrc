@@ -1,0 +1,56 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/kavete/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+#
+export PATH="$PATH:~/.local/bin"
+
+eval "$(oh-my-posh init zsh --config ~/.oh-my-posh/themes/jblab_2021.omp.json)"
+
+eval "$(zoxide init zsh)"
+alias ls='eza --long --color=always --git --no-filesize --no-time --no-user --icons=auto --git-ignore --no-permissions'
+alias cd='z'
+alias cat='bat'
+alias tree='eza --tree'
+
+
+# Path to your Zsh plugins directory
+export ZSH_CUSTOM=$HOME/.zsh/plugins
+
+# Load zsh-syntax-highlighting
+source $ZSH_CUSTOM/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Load zsh-autosuggestions
+source $ZSH_CUSTOM/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/kavete/.dart-cli-completion/zsh-config.zsh ]] && . /home/kavete/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+## Remember to confirm these again from Josean's video
+eval "$(fzf --zsh)"
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+_fzf_compgen_path() {
+  fd --hidden --exclude .git . "$1"
+}
+
+_fzf_compgen_dir() {
+  fd -type=d --hidden --exclude .git . "$1"
+}
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh --disable-up-arrow)"
+
