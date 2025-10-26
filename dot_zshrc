@@ -11,7 +11,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 #
-export PATH="$PATH:~/.local/bin"
+export PATH="$HOME:/.local/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
 
 eval "$(oh-my-posh init zsh --config ~/.oh-my-posh/themes/jblab_2021.omp.json)"
 
@@ -53,4 +55,11 @@ _fzf_compgen_dir() {
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh --disable-up-arrow)"
+
+
+## Django aliases
+alias collectstatic="uv run manage.py collectstatic"
+alias runserver="uv run manage.py runserver"
+alias migrate="uv run manage.py migrate"
+alias makemigrations="uv run manage.py makemigrations"
 
