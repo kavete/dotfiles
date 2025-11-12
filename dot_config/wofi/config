@@ -1,0 +1,13 @@
+# ~/.config/wofi/config
+show=drun
+width=500
+height=300
+prompt=Launch Application
+insensitive=true
+allow_images=true
+allow_markup=true
+normal_window=true
+lines=5
+columns=1
+sort_order=alphabetical
+gtk_dark=true
