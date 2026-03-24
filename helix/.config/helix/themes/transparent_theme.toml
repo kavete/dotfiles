@@ -1,0 +1,10 @@
+
+inherits = "github_dark"
+
+# This removes the background color for the main editor and UI elements
+"ui.background" = { bg = "none" }
+"ui.window" = { bg = "none" }
+"ui.statusline" = { bg = "none" }
+"ui.help" = { bg = "none" }
+"ui.menu" = { bg = "none" }
+"ui.popup" = { bg = "none" }
