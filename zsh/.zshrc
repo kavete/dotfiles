@@ -18,17 +18,17 @@ eval "$(zoxide init zsh)"
 
 alias cd='z'
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='eza --long --color=always --git --no-filesize --no-time --no-user --icons=auto --no-permissions'
-
+alias hx='helix'
 
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export PICO_SDK_PATH=$HOME/pico-sdk
+# export PICO_SDK_PATH=$HOME/pico-sdk
 
-export MEMOS_DATA="$HOME/.memos"
+# export MEMOS_DATA="$HOME/.memos"
 
-alias update="sudo dnf update && cargo install-update -a"
+# alias update="sudo dnf update && cargo install-update -a"
