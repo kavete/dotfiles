@@ -199,8 +199,6 @@ binds {
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }
-// Add this inside your `binds { ... }` section in ~/.config/niri/config.kdl
-// (create the section if it doesn't exist yet — copy it from the default config if needed)
 
     Mod+Shift+W  hotkey-overlay-title="Change Wallpaper" { spawn-sh "/home/kavete/.local/bin/change-wallpaper"; }
 }
