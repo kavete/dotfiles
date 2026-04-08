@@ -22,7 +22,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='eza --long --color=always --git --no-filesize --no-time --no-user --icons=auto --no-permissions'
-alias hx='helix'
+# alias hx='helix'
 
 
 export PATH="$HOME/.local/bin:$PATH"
