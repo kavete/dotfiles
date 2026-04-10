@@ -1,5 +1,5 @@
 
-inherits = "github_dark"
+inherits = "bogster"
 
 # This removes the background color for the main editor and UI elements
 "ui.background" = { bg = "none" }

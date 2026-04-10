@@ -25,4 +25,24 @@ command = "tinymist"
 name = "typst"
 language-servers = ["tinymist"]
 
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
 
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "emmet-lsp" ]
+
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "emmet-lsp" ]
+
+
+[language-server.ron-lsp]
+command = "ron-lsp"
+
+[[language]]
+name = "ron"
+language-servers = ["ron-lsp"]

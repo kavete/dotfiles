@@ -22,13 +22,13 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='eza --long --color=always --git --no-filesize --no-time --no-user --icons=auto --no-permissions'
-# alias hx='helix'
 
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# export PICO_SDK_PATH=$HOME/pico-sdk
+export PICO_SDK_PATH=/usr/share/pico-sdk
 
-# export MEMOS_DATA="$HOME/.memos"
 
-# alias update="sudo dnf update && cargo install-update -a"
+alias ...="cd ../../"
+
+alias ....="cd ../../../"
