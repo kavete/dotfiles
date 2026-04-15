@@ -46,3 +46,15 @@ command = "ron-lsp"
 [[language]]
 name = "ron"
 language-servers = ["ron-lsp"]
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
+
+[language-server.harper-ls.config.harper-ls]
+dialect = "British" 
+diagnosticSeverity = "hint" # Use "warning" if you want them to be more prominent
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "harper-ls" ]

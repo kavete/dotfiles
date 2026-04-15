@@ -2,6 +2,7 @@
 
 Currently included tools/applications
 - zsh
-- alacritty
 - fastfetch
 - helix 
+- rmpc
+- mpd

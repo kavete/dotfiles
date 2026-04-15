@@ -1,7 +1,6 @@
 
 inherits = "bogster"
 
-# This removes the background color for the main editor and UI elements
 "ui.background" = { bg = "none" }
 "ui.window" = { bg = "none" }
 "ui.statusline" = { bg = "none" }
