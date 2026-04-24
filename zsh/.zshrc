@@ -29,7 +29,4 @@ export PATH="$HOME/.local/bin:$PATH"
 export PICO_SDK_PATH=/usr/share/pico-sdk
 
 
-alias ...="cd ../../"
-
-alias ....="cd ../../../"
 

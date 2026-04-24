@@ -1,10 +1,8 @@
 theme = "transparent_theme"
+
 [editor]
 line-number = "relative"
 true-color = true
 color-modes = true
 clipboard-provider = "wayland"
 soft-wrap.enable = true
-
-
-
