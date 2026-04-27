@@ -6,6 +6,7 @@
     password: None,
     theme: None,
     cache_dir: None,
+    lyrics_dir: "/mnt/Files/Music",
     on_song_change: None,
     volume_step: 5,
     max_fps: 30,

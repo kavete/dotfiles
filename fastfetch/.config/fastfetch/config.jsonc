@@ -162,11 +162,12 @@
       "type": "terminal",
       "key": "│{#yellow}│ {icon}  Terminal  │{$4}│{#keys}│{$2}"
     },
-    /*
         {
             "type": "terminalfont",
             "key": "│{#yellow}│ {icon}  Term Font │{$4}│{#keys}│{$2}"
         },
+
+    /*
         {
             "type": "terminaltheme",
             "key": "│{#yellow}│ {icon}  Colors    │{$4}│{#keys}│{$2}"
@@ -188,13 +189,14 @@
       "key": "│{#red}┌──────────────┬{$1}┐{#keys}│\u001b[39D",
       "format": "{#bright_red} Development "
     },
-    /*        {
+            {
             "type": "command",
             "keyIcon": "",                                   // Custom icon override
             "key": "│{#red}│ {icon}  Rust      │{$4}│{#keys}│{$2}",
             "text": "rustc --version",
             "format": "rustc {~6,13}"                         // Print 6th to 13th characters (version number)
         },
+        /* 
         {
             "type": "command",
             "condition": {

@@ -40,13 +40,6 @@ name = "css"
 language-servers = [ "vscode-css-language-server", "emmet-lsp" ]
 
 
-[language-server.ron-lsp]
-command = "ron-lsp"
-
-[[language]]
-name = "ron"
-language-servers = ["ron-lsp"]
-
 [language-server.harper-ls]
 command = "harper-ls"
 args = ["--stdio"]
