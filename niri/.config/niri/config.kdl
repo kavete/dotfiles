@@ -271,10 +271,10 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "ashell"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "swaybg" "-i" "/home/kavete/Pictures/gon.jpg" "-m" "fill"
+spawn-at-startup "swaybg" "-i" "/home/kavete/Pictures/kaisen.jpeg" "-m" "fill"
+spawn-at-startup "ghostty"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -369,9 +369,11 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-    Mod+B hotkey-overlay-title="Open a browser: vivaldi" { spawn "vivaldi"; }
+    Mod+B hotkey-overlay-title="Open a browser: google chrome" { spawn "google-chrome-stable"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+D hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
+    Mod+Shift+D hotkey-overlay-title="Open daily note" { spawn-sh " ghostty -e /home/kavete/Scripts/misc/dailynote.sh"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.

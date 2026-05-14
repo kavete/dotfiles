@@ -13,6 +13,10 @@ args = ["server"]
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
+
+[language-server.rust-analyzer.config.cargo]
+allFeatures = true
+
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
@@ -23,7 +27,7 @@ command = "tinymist"
 
 [[language]]
 name = "typst"
-language-servers = ["tinymist"]
+language-servers = ["tinymist", "harper-ls"]
 
 [language-server.emmet-lsp]
 command = "emmet-language-server"
@@ -51,3 +55,17 @@ diagnosticSeverity = "hint" # Use "warning" if you want them to be more prominen
 [[language]]
 name = "markdown"
 language-servers = [ "marksman", "harper-ls" ]
+
+
+[[language]]
+name = "cpp"
+
+[language-server.clangd]
+command = "clangd"
+args = [
+  "--compile-commands-dir=.",
+  "--header-insertion=never",
+  # This tells clangd where it's allowed to look for the compiler
+  "--query-driver=/**/bin/arm-none-eabi*",
+  "--background-index"
+]

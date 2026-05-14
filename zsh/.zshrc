@@ -27,7 +27,9 @@ alias cat='bat'
 
 export PATH="$HOME/.local/bin:$PATH"
 
+export PATH="$HOME/go/bin:$PATH"
+
 export PICO_SDK_PATH=/usr/share/pico-sdk
 
 
-
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable

@@ -1,8 +1,16 @@
 theme = "transparent_theme"
 
+
 [editor]
 line-number = "relative"
 true-color = true
 color-modes = true
 clipboard-provider = "wayland"
 soft-wrap.enable = true
+
+[editor.lsp]
+display-inlay-hints = true
+
+[keys.normal]
+# Press Space + i to toggle hints
+"space" = { i = ":toggle lsp.display-inlay-hints" }
