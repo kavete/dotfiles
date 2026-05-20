@@ -10,12 +10,10 @@ typeCheckingMode = "basic"
 command = "ruff"
 args = ["server"]
 
-[language-server.rust-analyzer.config.check]
-command = "clippy"
-
-
-[language-server.rust-analyzer.config.cargo]
-allFeatures = true
+[language-server.rust-analyzer.config]
+check = { command = "clippy" }
+cargo = { allFeatures = true }
+procMacro = { ignored = { leptos_macro = ["component", "server"] } }
 
 [[language]]
 name = "toml"
